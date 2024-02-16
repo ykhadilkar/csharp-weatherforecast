@@ -21,7 +21,10 @@ spec:
           - name: source-revision
         steps:
           - name: dotnet-test
-            image: mcr.microsoft.com/dotnet/aspnet:6.0
+            image: mcr.microsoft.com/dotnet/sdk:6.0
             script: |-
-              dotnet restore
+              cd `mktemp -d`
+              wget -qO- $(params.source-url) | tar xvz -m
+
+              dotnet --info
               dotnet test
