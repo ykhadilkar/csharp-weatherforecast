@@ -11,12 +11,13 @@ metadata:
     tanzu.app.live.view.application.name: csharp-weatherforecast
 spec:
   params:
-  - name: annotations
-    value:
-      autoscaling.knative.dev/minScale: "1"
-  - name: testing_pipeline_matching_labels
+    - name: annotations
+      value:
+        autoscaling.knative.dev/minScale: "1"
+    - name: testing_pipeline_matching_labels
       value:
         apps.tanzu.vmware.com/pipeline: test-dotnet
+  
   source:
     git:
       url: https://github.com/ykhadilkar/csharp-weatherforecast
