@@ -1,0 +1,13 @@
+id: c9d01632-1f5d-4388-a48d-c9c9eb3d0689
+timestamp: 2024-02-16T18:26:02.206Z
+source: TAP-GUI
+username: ykhadilkar
+options:
+  bsGitBranch: main
+  projectName: csharp-weatherforecast
+  applicationName: Sample
+  bsGitRepository: github.com?owner=ykhadilkar&repo=csharp-weatherforecast
+accelerator:
+  name: csharp-weatherforecast
+fragments:
+  - name: tap-workload
